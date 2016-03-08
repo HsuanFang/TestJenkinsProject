@@ -22,6 +22,10 @@ android {
         checkReleaseBuilds false
         abortOnError false
     }
+
+    afterEvaluate {
+        tasks.findByName('lint').enabled = false
+    }
 }
 
 dependencies {
